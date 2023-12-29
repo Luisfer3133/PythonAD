@@ -19,7 +19,14 @@ try:
                  print('Dame un numero valido para tu calificación.')
         
     print(calcula_calificacion(calf))
- 
 
 except:
     print('Dame un numero valido para tu calificación.')
+
+menor = None
+print('Antes: ', menor)
+for n in [4,8,3,56,45]:
+		if menor is None or n<menor:
+				menor = n
+		print('Bucle: ', n, menor)
+print('Menor: ', menor)
